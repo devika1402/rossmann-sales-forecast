@@ -1,0 +1,29 @@
+# Data — downloaded from Kaggle, not versioned
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+
+# Model artifacts
+models/*
+!models/.gitkeep
+
+# Outputs
+outputs/submission.csv
+outputs/metrics_report.md
+outputs/figures/*
+!outputs/figures/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
