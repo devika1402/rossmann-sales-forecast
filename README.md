@@ -30,7 +30,7 @@ chain where every store must be stocked correctly regardless of size.
 |-------|--------|-----|
 | Validation | 3-fold walk-forward CV (expanding window across 2015) | No shuffling, that would leak the future. Each validation block is 6 weeks, matching the Kaggle test horizon. |
 | Target | `log1p(Sales)` | Training MSE on the log target approximates the scale-invariant RMSPE. |
-| Features | Calendar, holiday-proximity, promotion (incl. date-aware Promo2), competition, sales lags/rolling, and per-store aggregates | Shows retail intuition. See section 4. |
+| Features | Calendar, holiday-proximity, promotion (incl. date-aware Promo2), competition, sales lags/rolling, and per-store aggregates | Section 4 |
 | Primary model | LightGBM with a 30-trial Optuna sweep on Fold 1 | Fast on ~1M rows, native categorical handling, strong on tabular retail data. |
 | Comparison model | MSTL (Nixtla `statsforecast`) at store-type cluster level | Interpretable trend + weekly + yearly decomposition. Prophet was deprecated by Meta in 2024. `statsforecast` is the maintained, faster successor. |
 | Baselines | Naive (last week) and per-(store, weekday) median | The median is the bar a competent analyst sets without ML. The model must beat it convincingly. |
