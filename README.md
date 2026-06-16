@@ -6,7 +6,7 @@ Forecasting daily sales for ~1,115 retail stores six weeks ahead, using the publ
 [Kaggle Rossmann Store Sales](https://www.kaggle.com/c/rossmann-store-sales) dataset
 (German drugstore chain, 2013-2015).
 
-This dataset mirrors the structural forecasting challenge faced by Dutch grocery
+This dataset mirrors the structural forecasting challenge faced by grocery
 retailers: a fleet of stores with distinct sizes and assortments, recurring
 weekly promotions, school/state holidays, and nearby competitors, all of which
 move sales. Accurate store-level forecasts drive staffing, inventory, and
